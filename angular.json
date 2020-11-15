@@ -122,8 +122,13 @@
               "devServerTarget": "RealChatApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "RealChatApp"
 }

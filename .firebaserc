@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "realchatapp-7eb2a": {
+      "hosting": {
+        "RealChatApp": [
+          "realchatapp-7eb2a"
+        ]
+      }
+    }
+  }
+}
