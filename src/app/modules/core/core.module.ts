@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import {RouterModule} from '@angular/router';
+import {MaterialModule} from '../material/material.module';
 
 
 
@@ -12,7 +13,8 @@ import {RouterModule} from '@angular/router';
   declarations: [LoginComponent, RegisterComponent, MainComponent, HeaderComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
   ]
 })
 export class CoreModule { }

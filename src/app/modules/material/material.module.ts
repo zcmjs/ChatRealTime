@@ -5,8 +5,10 @@ import {
   MatButtonModule,
   MatDialogModule,
   MatIconModule,
-  MatInputModule, MatSnackBarConfig,
-  MatSnackBarModule
+  MatInputModule,
+  MatSnackBarConfig,
+  MatSnackBarModule,
+  MatToolbarModule
 } from '@angular/material';
 
 const MATERIAL_MODULES = [
@@ -14,7 +16,9 @@ const MATERIAL_MODULES = [
   MatButtonModule,
   MatSnackBarModule,
   MatInputModule,
-  MatDialogModule
+  MatDialogModule,
+  MatToolbarModule,
+  MatIconModule
 ];
 
 const MAT_SNACKBAR_GLOBAL_CONFIG: MatSnackBarConfig = {
@@ -25,7 +29,9 @@ const MAT_SNACKBAR_GLOBAL_CONFIG: MatSnackBarConfig = {
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: MAT_SNACKBAR_GLOBAL_CONFIG}
