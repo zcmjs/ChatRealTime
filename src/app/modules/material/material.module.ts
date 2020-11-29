@@ -4,22 +4,16 @@ import {
   MAT_SNACK_BAR_DEFAULT_OPTIONS,
   MatButtonModule,
   MatDialogModule,
-  MatFormField,
   MatIconModule,
   MatInputModule, MatSnackBarConfig,
-  MatSnackBarModule,
-  MatToolbar,
-  MatTooltip
+  MatSnackBarModule
 } from '@angular/material';
 
 const MATERIAL_MODULES = [
   MatIconModule,
   MatButtonModule,
   MatSnackBarModule,
-  MatFormField,
   MatInputModule,
-  MatToolbar,
-  MatTooltip,
   MatDialogModule
 ];
 
@@ -36,6 +30,6 @@ const MAT_SNACKBAR_GLOBAL_CONFIG: MatSnackBarConfig = {
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: MAT_SNACKBAR_GLOBAL_CONFIG}
   ],
-  exports: [...this.MATERIAL_MODULES]
+  exports: [...MATERIAL_MODULES]
 })
 export class MaterialModule { }
